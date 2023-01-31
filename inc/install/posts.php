@@ -41,3 +41,6 @@ function create_project_post_type() {
 
 // Hook the custom post type function to the init action
 add_action( 'init', 'create_project_post_type' );
+
+// Add post thumbnail support for custom post type
+add_theme_support( 'post-thumbnails', array( 'project' ) );
