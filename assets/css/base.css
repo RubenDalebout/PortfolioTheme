@@ -30,5 +30,11 @@ body footer .footer-socials i {
   font-size: 20px;
 }
 body footer .footer-socials i [brand=github] {
-  color: white;
+  color: #333;
+}
+body footer .footer-socials i [brand=instagram] {
+  color: #c13584;
+}
+body footer .footer-socials i [brand=discord] {
+  color: #7289da;
 }/*# sourceMappingURL=base.css.map */
