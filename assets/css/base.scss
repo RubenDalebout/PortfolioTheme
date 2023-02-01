@@ -34,17 +34,30 @@ body {
 
             i {
                 font-size: 20px;
+                transition: all .5s ease;
 
                 &[brand="github"] {
                     color: #fff;
+
+                    &:hover {
+                        color: darken($color: #fff, $amount: 20%);
+                    }
                 }
 
                 &[brand="instagram"] {
                     color: #c13584;
+
+                    &:hover {
+                        color: darken($color: #c13584, $amount: 20%);
+                    }
                 }
 
                 &[brand="discord"] {
                     color: #7289da;
+
+                    &:hover {
+                        color: darken($color: #7289da, $amount: 20%);
+                    }
                 }
             }
         }

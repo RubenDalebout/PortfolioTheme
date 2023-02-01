@@ -28,13 +28,23 @@ body footer .footer-socials {
 }
 body footer .footer-socials i {
   font-size: 20px;
+  transition: all 0.5s ease;
 }
 body footer .footer-socials i[brand=github] {
   color: #fff;
 }
+body footer .footer-socials i[brand=github]:hover {
+  color: #cccccc;
+}
 body footer .footer-socials i[brand=instagram] {
   color: #c13584;
 }
+body footer .footer-socials i[brand=instagram]:hover {
+  color: #711f4d;
+}
 body footer .footer-socials i[brand=discord] {
   color: #7289da;
+}
+body footer .footer-socials i[brand=discord]:hover {
+  color: #304eb6;
 }/*# sourceMappingURL=base.css.map */
