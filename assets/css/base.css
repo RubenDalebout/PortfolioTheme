@@ -13,4 +13,9 @@ body footer {
   padding: 0.25rem;
   text-align: center;
   background: rgba(0, 0, 0, 0.1);
+}
+body footer .footer-socials {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }/*# sourceMappingURL=base.css.map */
