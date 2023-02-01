@@ -12,19 +12,31 @@ body[theme=dark] {
 body p {
   margin: 0;
 }
+body a {
+  text-decoration: none;
+}
 body footer {
-  display: flex;
-  gap: 0.5rem;
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
   text-align: center;
   background: rgba(0, 0, 0, 0.1);
 }
+@media only screen and (min-width: 600px) {
+  body footer {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
 body footer .footer-socials {
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
   gap: 0.5rem;
+}
+@media only screen and (min-width: 600px) {
+  body footer .footer-socials {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 body footer .footer-socials i {
   font-size: 20px;
