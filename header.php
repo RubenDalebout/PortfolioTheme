@@ -9,6 +9,16 @@
     <?php wp_head(); ?>
 </head>
 <body theme="dark">
+    <nav toggle="true">
+    <?php
+        wp_nav_menu( array(
+        'theme_location' => 'primary',
+        'container' => false,
+        'menu_class' => 'primary-menu'
+        ) );
+    ?>
+    </nav>
+
     <button menu-toggle class="btn">
         <i class="fa-solid fa-bars"></i>
     </button>
