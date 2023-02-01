@@ -4,8 +4,11 @@ if (!defined('ABSPATH')) exit;
 
 // Enqueue scripts on the pages
 function enqueue_theme_scripts() {
+    // jQuery
+    wp_enqueue_script('jquery');
+
     // Main js file
-    wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.min.js', array(), (wp_get_environment_type() === 'staging') ? time() : wp_get_theme()->get('Version'), false );
+    wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.min.js', array('jquery'), (wp_get_environment_type() === 'staging') ? time() : wp_get_theme()->get('Version'), false );
     wp_localize_script( 'main', 'adminData', array( 
         'site' => home_url(),
     ));
