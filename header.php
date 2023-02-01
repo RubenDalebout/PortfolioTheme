@@ -9,6 +9,6 @@
     <?php wp_head(); ?>
 </head>
 <body theme="dark">
-    <button>
-        <i class="fas fa-th-large"></i>
+    <button menu-toggle class="btn">
+        <i class="fa-solid fa-bars"></i>
     </button>
