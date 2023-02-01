@@ -12,6 +12,9 @@ function enqueue_theme_scripts() {
     wp_localize_script( 'main', 'adminData', array( 
         'site' => home_url(),
     ));
+
+    // Fontawesome
+    wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/inc/libraries/fontawesome/css/all.min.css', array(), (wp_get_environment_type() === 'staging') ? time() : wp_get_theme()->get('Version') );
     
     // Base stylesheet
     wp_enqueue_style( 'base', get_template_directory_uri() . '/assets/css/base.min.css', array(), (wp_get_environment_type() === 'staging') ? time() : wp_get_theme()->get('Version') );
