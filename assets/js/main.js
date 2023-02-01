@@ -1,3 +1,6 @@
 jQuery( document ).ready(function($) {
-    console.log( "ready!" );
+    // Detect menu toggle
+    $(document).on('click', '[menu-toggle]', function() {
+        ($('nav').attr('toggle') === 'true') ? $('nav').attr('toggle', 'false') : $('nav').attr('toggle', 'true');
+    });
 });

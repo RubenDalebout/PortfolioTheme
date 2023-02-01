@@ -9,6 +9,9 @@ body[theme=dark] {
   background: #3B3838;
   color: #fff;
 }
+body[theme=dark] nav {
+  background: #3B3838;
+}
 body[theme=dark] .btn {
   background: linear-gradient(to right, #1a202c, #2d3e50);
   box-shadow: 0px 10px 20px rgba(26, 32, 44, 0.4);
@@ -54,13 +57,57 @@ body .btn.dark-yellow {
   box-shadow: 0px 10px 20px rgba(254, 186, 17, 0.4);
 }
 body nav {
+  padding: 0.5rem;
+  background: #fff;
+  height: calc(100vh - 1rem);
+  width: calc(100vW - 1rem);
+  overflow-y: scroll;
+  position: fixed;
+}
+body nav div {
   display: flex;
-  background-color: red;
-  height: 100vH;
-  width: 100vW;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+body nav div button {
+  transform: scale(0);
+  width: calc(50% - 0.75rem);
+  height: 150px;
+  max-height: 150px;
+  -webkit-animation: bounce-in 0.5s ease-out;
+          animation: bounce-in 0.5s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+body nav div button:nth-child(2n) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 body nav[toggle=false] {
   display: none;
+}
+@-webkit-keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 body footer {
   align-items: center;
