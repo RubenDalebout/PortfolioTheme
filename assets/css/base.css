@@ -1,8 +1,15 @@
 body {
+  margin: 0;
   background: #fff;
   color: #000;
 }
 body[theme=dark] {
   background: #3B3838;
   color: #fff;
+}
+body footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=base.css.map */
