@@ -9,3 +9,6 @@
     <?php wp_head(); ?>
 </head>
 <body theme="dark">
+    <button>
+        <i class="fas fa-th-large"></i>
+    </button>
