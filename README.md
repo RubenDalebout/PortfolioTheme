@@ -1,13 +1,12 @@
-# Vue.js WordPress Theme - Readme
+# WordPress Theme - Readme
 
 ## Introduction
 
-This is a custom WordPress theme built using Vue.js version 3. It is designed for personal portfolio websites to showcase projects and provide information about the creator.
+Initially it was planned to create this theme using VueJS, but since I want to get the basics working first, I decided to create a standard Wordpress theme first. In the future I will then decide if I will still make the VueJS version.
 
 ## Requirements
 
 - WordPress installation
-- npm (Node Package Manager)
 
 ## Installation
 
@@ -16,14 +15,6 @@ To run this theme, follow these steps:
 1. Install WordPress on your web server. If you don't already have WordPress installed, you can follow the official WordPress installation guide at https://wordpress.org/support/article/how-to-install-wordpress/
 2. Download the theme files and extract them to the `wp-content/themes` directory.
 3. In the WordPress dashboard, go to `Appearance > Themes` and activate the theme.
-4. Run `npm install` in the theme directory to install all required dependencies.
-5. Run `npm run serve` to start a development server and access the site at `http://localhost:8080`.
-
-## Development
-
-This theme was built using Vue.js version 3 and uses a combination of JavaScript, HTML, and CSS for its frontend. If you want to make changes to the theme, you can start by editing the Vue.js components in the `src` directory.
-
-To compile the changes and build the production version of the theme, run `npm run build`. This will generate the minified and optimized files in the `dist` directory, which can be uploaded to your web server.
 
 ## Conclusion
 
