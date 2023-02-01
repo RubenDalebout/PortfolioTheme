@@ -9,13 +9,26 @@ body[theme=dark] {
   background: #3B3838;
   color: #fff;
 }
+body p {
+  margin: 0;
+}
 body footer {
-  padding: 0.25rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
   text-align: center;
   background: rgba(0, 0, 0, 0.1);
 }
 body footer .footer-socials {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  gap: 0.5rem;
+}
+body footer .footer-socials i {
+  font-size: 20px;
+}
+body footer .footer-socials i [brand=github] {
+  color: white;
 }/*# sourceMappingURL=base.css.map */
