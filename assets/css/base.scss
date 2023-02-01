@@ -35,15 +35,15 @@ body {
             i {
                 font-size: 20px;
 
-                [brand="github"] {
-                    color: #333;
+                &[brand="github"] {
+                    color: #fff;
                 }
 
-                [brand="instagram"] {
+                &[brand="instagram"] {
                     color: #c13584;
                 }
 
-                [brand="discord"] {
+                &[brand="discord"] {
                     color: #7289da;
                 }
             }
