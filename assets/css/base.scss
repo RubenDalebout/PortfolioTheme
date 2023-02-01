@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 body {
     margin: 0;
 
     background: #fff;
     color: #000;
+    font-family: 'Rubik', sans-serif;
 
     &[theme="dark"] {
         background: #3B3838;
@@ -10,10 +13,8 @@ body {
     }
 
     footer {
-        position: fixed;
-        bottom: 0;
-
-        width: 100%;
+        padding: .25rem;
+        text-align: center;
         
         background: rgba($color: #000000, $alpha: 0.1);
     }

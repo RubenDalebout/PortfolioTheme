@@ -1,1 +1,1 @@
-body{margin:0;background:#fff;color:#000}body[theme=dark]{background:#3b3838;color:#fff}body footer{position:fixed;bottom:0;width:100%;background:rgba(0,0,0,.1)}/*# sourceMappingURL=base.min.css.map */
+@import"https://fonts.googleapis.com/css2?family=Rubik&display=swap";body{margin:0;background:#fff;color:#000;font-family:"Rubik",sans-serif}body[theme=dark]{background:#3b3838;color:#fff}body footer{padding:.25rem;text-align:center;background:rgba(0,0,0,.1)}/*# sourceMappingURL=base.min.css.map */
