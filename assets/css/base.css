@@ -15,6 +15,40 @@ body p {
 body a {
   text-decoration: none;
 }
+body .btn {
+  text-transform: uppercase;
+  padding: 1.5em 2em;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  background: linear-gradient(to right, #1b9e5f, #3dc59f);
+  background-size: 200% auto;
+  box-shadow: 0px 10px 20px rgba(27, 158, 95, 0.4);
+}
+body .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  background-position: right center;
+}
+body .btn.red {
+  background: linear-gradient(to right, #f53939, #f12121);
+  box-shadow: 0px 10px 20px rgba(245, 57, 57, 0.4);
+}
+body .btn.dark-yellow {
+  background: linear-gradient(to right, #feba11, #f3af3b);
+  box-shadow: 0px 10px 20px rgba(254, 186, 17, 0.4);
+}
+body .btn.dark {
+  background: linear-gradient(to right, #1a202c, #2d3e50);
+  box-shadow: 0px 10px 20px rgba(26, 32, 44, 0.4);
+}
+body .btn.light {
+  background: linear-gradient(to right, #f7fafc, #edf2f7);
+  box-shadow: 0px 10px 20px rgba(247, 250, 252, 0.4);
+}
 body footer {
   align-items: center;
   justify-content: center;
