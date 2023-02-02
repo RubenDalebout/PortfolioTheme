@@ -8,17 +8,4 @@
 
     <?php wp_head(); ?>
 </head>
-<body theme="dark">
-    <nav toggle="true">
-        <div>
-            <?php
-            $menu_items = wp_get_nav_menu_items('Primary');
-            foreach($menu_items as $menu_item) : ?>
-                <button class="btn"><?php echo $menu_item->title; ?></button>
-            <?php endforeach; ?>
-        </div>
-    </nav>
-
-    <button menu-toggle class="btn">
-        <i class="fa-solid fa-bars"></i>
-    </button>
+<body>
