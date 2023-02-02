@@ -27,7 +27,7 @@ function create_coding_language_taxonomy() {
         'rewrite' => array( 'slug' => 'coding-language' ),
     );
 
-    register_taxonomy( 'coding_languages', array( 'project' ), $args );
+    register_taxonomy( 'coding_languages', array( 'project', 'certificate' ), $args );
 }
 
 // Hook the custom taxonomy function to the init action
