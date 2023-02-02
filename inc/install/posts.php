@@ -2,7 +2,10 @@
 // Stop script if accessed directly
 if (!defined('ABSPATH')) exit;
 
-include get_template_directory() . '/inc/install/posts/project.php';
+array_map(function($file) {
+    // Include each file in the "posts" directory
+    include get_template_directory() . '/inc/install/posts/' . $file;
+}, array_diff(scandir(get_template_directory() . '/inc/install/posts/'), array('.', '..')));  
 
 // Add post thumbnail support for custom post type
 add_theme_support( 'post-thumbnails', array( 'project' ) );
